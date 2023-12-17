@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <style>
+         .sticky {
+         position: sticky;
+         top: 0;
+         background-color: white;
+         padding: 10px;
+         font-size: 18px;
+         }
+         table {
+         width: 100%;
+         border-collapse: collapse;
+         margin-top: 60px;
+         }
+         th, td {
+         border: 1px solid black;
+         padding: 8px;
+         text-align: left;
+         }
+         img {
+         object-fit: cover;
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         }
+         #modelsTable th {
+         position: sticky;
+         top: 50px;
+         background-color: white;
+         }
+      </style>
+      <script>
+         function filterModels() {
+             var input = document.getElementById("filterSelect");
+             var filter = Array.from(input.selectedOptions).map(option => option.value.toUpperCase());
+             var table = document.getElementById("modelsTable");
+             var tr = table.getElementsByTagName("tr");
+             var count = 0;
+         
+             for (var i = 1; i < tr.length; i++) {
+                 var td = tr[i].getElementsByTagName("td")[1]; // Tags column
+                 if (td) {
+                     var txtValue = td.textContent ,, td.innerText;
+                     var match = filter.length === 0 ,, filter.some(f => txtValue.toUpperCase().includes(f));
+         
+                     if (match) {
+                         tr[i].style.display = "";
+                         count++;
+                     } else {
+                         tr[i].style.display = "none";
+                     }
+                 }       
+             }
+         
+             // Update the filter info display
+             var filterInfo = document.getElementById("filterInfo");
+             if (filter.length > 0) {
+                 filterInfo.innerHTML = "Wybrany tag: " + filter.join(", ") + "<br>Liczba wyników: " + count;
+             } else {
+                 filterInfo.innerHTML = "";
+             }
+         }
+      </script>
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   </head>
+   <body onload="sortTable()">
+      <div class="sticky">
+         <p id="filterInfo"></p>
+         <h2>OnlyFans Models</h2>
+         <p>Liczba modelek: 112</p>
+         <select id="filterSelect" multiple="" onchange="filterModels()">
+            <p id="filterInfo"></p>
+            <option value="3SOME">3SOME</option>
+            <option value="4SOME">4SOME</option>
+            <option value="BLONDE">BLONDE</option>
+            <option value="BOOTY">BOOTY</option>
+            <option value="BRUNETTE">BRUNETTE</option>
+            <option value="CUTE">CUTE</option>
+            <option value="FANBUS">FANBUS</option>
+            <option value="FIT">FIT</option>
+            <option value="INDIAN">INDIAN</option>
+            <option value="LATINA">LATINA</option>
+            <option value="MATURE">MATURE</option>
+            <option value="MILF">MILF</option>
+            <option value="PETITE">PETITE</option>
+            <option value="POLISH">POLISH</option>
+            <option value="PORN">PORN</option>
+            <option value="PRO BOXER">PRO BOXER</option>
+            <option value="SMALL DI">SMALL DI</option>
+            <option value="TEEN">TEEN</option>
+            <option value="THE BEST">THE BEST</option>
+            <option value="THICC">THICC</option>
+         </select>
+         <p id="filterInfo"></p>
+         <button onclick="clearFilters()">Clear Filters</button>
+      </div>
+      <table class="table table-dark " id="modelsTable" style="width: 100%; border-collapse: collapse;">
+         <thead>
+            <tr>
+               <th scope="col" style="background-color: #f8f9fa; text-align: left;color:black">Name</th>
+               <th scope="col" style="background-color: #f8f9fa; text-align: left;color:black"">Tags</th>
+               <th scope="col" style="background-color: #f8f9fa; text-align: left;color:black"">Links</th>
+               <th scope="col" style="background-color: #f8f9fa; text-align: left;color:black"">Image</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>Astrid Wett</td>
+               <td> FIT  ,  PETITE , BLONDE </td>
+               <td><a href="https://gotanynudes.com/tag/astrid-wett/">https://gotanynudes.com/tag/astrid-wett/</a><br/></td>
+               <td><img alt="Image of Astrid Wett" src="images/image18.png"/></td>
+            </tr>
+            <tr>
+               <td>SCARLETTKISSESXO</td>
+               <td> FIT  ,  PETITE , BLONDE </td>
+               <td><a href="https://gotanynudes.com/tag/scarlettkissesxo/">https://gotanynudes.com/tag/scarlettkissesxo/</a><br/></td>
+               <td><img alt="Image of SCARLETTKISSESXO" src="images/image85.png"/></td>
+            </tr>
+            <tr>
+               <td>TheCourteyNextDoor</td>
+               <td> SMALL DI , BLONDE </td>
+               <td><a href="https://gotanynudes.com/tag/courtney-mcclure/">https://gotanynudes.com/tag/courtney-mcclure/</a><br/></td>
+               <td><img alt="Image of TheCourteyNextDoor" src="images/image5.png"/></td>
+            </tr>
+            <tr>
+               <td>DaisyDrewUK</td>
+               <td> CUTE  ,  PETITE  ,  SMALL DI , BRUNETTE </td>
+               <td><a href="https://gotanynudes.com/tag/daisy-drew/">https://gotanynudes.com/tag/daisy-drew/</a><br/></td>
+               <td><img alt="Image of DaisyDrewUK" src="images/image51.png"/></td>
+            </tr>
+            <tr>
+               <td>Rylie Rowan</td>
+               <td> PETITE  ,  SMALL DI  ,  TEEN , 3SOME </td>
+               <td><a href="https://gotanynudes.com/tag/rylie-rowan/">https://gotanynudes.com/tag/rylie-rowan/</a><br/></td>
+               <td><img alt="Image of Rylie Rowan" src="images/image46.png"/></td>
+            </tr>
+            <tr>
+               <td>Natalie Monroe</td>
+               <td> THICC , BOOTY </td>
+               <td><a href="https://gotanynudes.com/tag/natalie-monroe/">https://gotanynudes.com/tag/natalie-monroe/</a><br/></td>
+               <td><img alt="Image of Natalie Monroe" src="images/image2.png"/></td>
+            </tr>
+            <tr>
+               <td>Nurshath Dulal</td>
+               <td>INDIAN</td>
+               <td><a href="https://gotanynudes.com/tag/nurshath-dulal/">https://gotanynudes.com/tag/nurshath-dulal/</a><br/><a href="https://internetchicks.com/actress/nurshath-dulal/">https://internetchicks.com/actress/nurshath-dulal/</a><br/></td>
+               <td><img alt="Image of Nurshath Dulal" src="images/image73.png"/></td>
+            </tr>
+            <tr>
+               <td>Summer Brookes</td>
+               <td> BOOTY  ,  THICC , BLONDE </td>
+               <td><a href="https://gotanynudes.com/tag/summer-brookes/">https://gotanynudes.com/tag/summer-brookes/</a><br/></td>
+               <td><img alt="Image of Summer Brookes" src="images/image39.png"/></td>
+            </tr>
+            <tr>
+               <td>TheRealBrittFit</td>
+               <td> FIT , BLONDE </td>
+               <td><a href="https://gotanynudes.com/tag/therealbrittfit/">https://gotanynudes.com/tag/therealbrittfit/</a><br/></td>
+               <td><img alt="Image of TheRealBrittFit" src="images/image19.png"/></td>
+            </tr>
+            <tr>
+               <td>GRACEWEARSLACE</td>
+               <td> TEEN , BOOTY </td>
+               <td><a href="https://gotanynudes.com/tag/gracewearslace/">https://gotanynudes.com/tag/gracewearslace/</a><br/></td>
+               <td><img alt="Image of GRACEWEARSLACE" src="images/image30.png"/></td>
+            </tr>
+            <tr>
+               <td>Utah Jazz</td>
+               <td> FIT  ,  TEEN , BLONDE </td>
+               <td><a href="https://gotanynudes.com/tag/utahjaz/">https://gotanynudes.com/tag/utahjaz/</a><br/></td>
+               <td><img alt="Image of Utah Jazz" src="images/image101.png"/></td>
+            </tr>
+            <tr>
+               <td>Hannahowo</td>
+               <td> TEEN , SMALL DI </td>
+               <td><a href="https://gotanynudes.com/tag/hannahowo/">https://gotanynudes.com/tag/hannahowo/</a><br/></td>
+               <td><img alt="Image of Hannahowo" src="images/image28.png"/></td>
+            </tr>
+            <tr>
+               <td>Frances Bentley</td>
+               <td> FIT  ,  PETITE , BLONDE </td>
+               <td><a href="https://gotanynudes.com/tag/frances-bentley/">https://gotanynudes.com/tag/frances-bentley/</a><br/></td>
+               <td><img alt="Image of Frances Bentley" src="images/image67.png"/></td>
+            </tr>
+            <tr>
+               <td>Itsmecat</td>
+               <td> TEEN , BLONDE </td>
+               <td><a href="https://gotanynudes.com/tag/itsmecat/">https://gotanynudes.com/tag/itsmecat/</a><br/><a href="https://internetchicks.com/actress/itsmecat/">https://internetchicks.com/actress/itsmecat/</a><br/></td>
+               <td><img alt="Image of Itsmecat" src="images/image102.png"/></td>
+            </tr>
+            <tr>
+               <td>Layla Roo</td>
+               <td> PETITE  ,  SMALL DI , BLONDE </td>
+               <td><a href="https://gotanynudes.com/tag/layla-roo/">https://gotanynudes.com/tag/layla-roo/</a><br/><a href="https://internetchicks.com/actress/lilylanes/">https://internetchicks.com/actress/lilylanes/</a><br/></td>
+               <td><img alt="Image of Layla Roo" src="images/image35.png"/></td>
+            </tr>
+            <tr>
+               <td>UrFavBellaBby</td>
+               <td> SMALL DI  ,  TEEN , ,  PETITE </td>
+               <td><a href="https://gotanynudes.com/tag/urfavbellabby/">https://gotanynudes.com/tag/urfavbellabby/</a><br/><a href="https://prothots.com/tag/noturhoneybb/">https://prothots.com/tag/noturhoneybb/</a><br/></td>
+               <td><img alt="Image of UrFavBellaBby" src="images/image109.png"/></td>
+            </tr>
+            <tr>
+               <td>Jessie And Jackson</td>
+               <td> FIT , BLONDE </td>
+               <td><a href="https://gotanynudes.com/tag/jessie-and-jackson/">https://gotanynudes.com/tag/jessie-and-jackson/</a><br/><a href="https://internetchicks.com/actress/jessie-and-jackson/">https://internetchicks.com/actress/jessie-and-jackson/</a><br/></td>
+               <td><img alt="Image of Jessie And Jackson" src="images/image106.png"/></td>
+            </tr>
+            <tr>
+               <td>Blondeadobo</td>
+               <td> FIT  ,  PETITE  ,  SMALL DI , BLONDE </td>
+               <td><a href="https://gotanynudes.com/tag/blondeadobo/">https://gotanynudes.com/tag/blondeadobo/</a><br/><a href="https://internetchicks.com/actress/blondeadobo/">https://internetchicks.com/actress/blondeadobo/</a><br/></td>
+               <td><img alt="Image of Blondeadobo" src="images/image50.png"/></td>
+            </tr>
+            <tr>
+               <td>Madiiitay</td>
+               <td> 4SOME  ,  BLONDE  ,  FIT , 3SOME </td>
+               <td><a href="https://gotanynudes.com/tag/madiiitay/">https://gotanynudes.com/tag/madiiitay/</a><br/><a href="https://internetchicks.com/actress/madiiitay/">https://internetchicks.com/actress/madiiitay/</a><br/></td>
+               <td><img alt="Image of Madiiitay" src="images/image87.png"/></td>
+            </tr>
+            <tr>
+               <td>K8lyn096</td>
+               <td> TEEN , PETITE </td>
+               <td><a href="https://gotanynudes.com/tag/k8lyn096/">https://gotanynudes.com/tag/k8lyn096/</a><br/></td>
+               <td><img alt="Image of K8lyn096" src="images/image110.png"/></td>
+            </tr>
+            <tr>
+               <td>Alice Arabella</td>
+               <td> PETITE , MATURE </td>
+               <td><a href="https://gotanynudes.com/tag/alice-arabella/">https://gotanynudes.com/tag/alice-arabella/</a><br/></td>
+               <td><img alt="Image of Alice Arabella" src="images/image84.png"/></td>
+            </tr>
+            <tr>
+               <td>Avril Mathie</td>
+               <td> PRO BOXER , MILF </td>
+               <td><a href="https://gotanynudes.com/tag/avril-mathie/">https://gotanynudes.com/tag/avril-mathie/</a><br/></td>
+               <td><img alt="Image of Avril Mathie" src="images/image104.png"/></td>
+            </tr>
+            <tr>
+               <td>CuteFruit18</td>
+               <td> SMALL DI  ,  TEEN , BOOTY </td>
+               <td><a href="https://gotanynudes.com/tag/cutefruit18/">https://gotanynudes.com/tag/cutefruit18/</a><br/></td>
+               <td><img alt="Image of CuteFruit18" src="images/image78.png"/></td>
+            </tr>
+            <tr>
+               <td>Your_submissive_doll</td>
+               <td> SMALL DI , MATURE </td>
+               <td><a href="https://gotanynudes.com/tag/your-submissive-doll/">https://gotanynudes.com/tag/your-submissive-doll/</a><br/></td>
+               <td><img alt="Image of Your_submissive_doll" src="images/image8.png"/></td>
+            </tr>
+            <tr>
+               <td>Haleigh Cox</td>
+               <td> BOOTY  ,  THICC , BLONDE </td>
+               <td><a href="https://gotanynudes.com/tag/haleigh-cox/">https://gotanynudes.com/tag/haleigh-cox/</a><br/></td>
+               <td><img alt="Image of Haleigh Cox" src="images/image57.png"/></td>
+            </tr>
+            <tr>
+               <td>Naomi Soraya</td>
+               <td> PETITE  ,  SMALL DI  ,  TEEN , BLONDE </td>
+               <td><a href="https://gotanynudes.com/tag/naomi-soraya/">https://gotanynudes.com/tag/naomi-soraya/</a><br/></td>
+               <td><img alt="Image of Naomi Soraya" src="images/image92.png"/></td>
+            </tr>
+            <tr>
+               <td>GwenGwiz</td>
+               <td> TEEN , BLONDE </td>
+               <td><a href="https://gotanynudes.com/tag/gwengwiz/">https://gotanynudes.com/tag/gwengwiz/</a><br/></td>
+               <td><img alt="Image of GwenGwiz" src="images/image111.png"/></td>
+            </tr>
+            <tr>
+               <td>Bronwin Aurora</td>
+               <td> 4SOME  ,  PETITE  ,  SMALL DI  ,  TEEN , 3SOME </td>
+               <td><a href="https://gotanynudes.com/tag/bronwin-aurora/">https://gotanynudes.com/tag/bronwin-aurora/</a><br/></td>
+               <td><img alt="Image of Bronwin Aurora" src="images/image32.png"/></td>
+            </tr>
+            <tr>
+               <td>Mia Cortez</td>
+               <td> SMALL DI  ,  TEEN , BOOTY </td>
+               <td><a href="https://gotanynudes.com/tag/mia-cortes/">https://gotanynudes.com/tag/mia-cortes/</a><br/></td>
+               <td><img alt="Image of Mia Cortez" src="images/image103.png"/></td>
+            </tr>
+            <tr>
+               <td>Madison Moores</td>
+               <td> BOOTY , BLONDE </td>
+               <td><a href="https://gotanynudes.com/tag/madison-moores/">https://gotanynudes.com/tag/madison-moores/</a><br/><a href="https://internetchicks.com/actress/madisonmoores/">https://internetchicks.com/actress/madisonmoores/</a><br/></td>
+               <td><img alt="Image of Madison Moores" src="images/image26.png"/></td>
+            </tr>
+            <tr>
+               <td>Cheerleader Kait</td>
+               <td> FIT  ,  TEEN , BLONDE </td>
+               <td><a href="https://gotanynudes.com/tag/cheerleader-kait/">https://gotanynudes.com/tag/cheerleader-kait/</a><br/></td>
+               <td><img alt="Image of Cheerleader Kait" src="images/image83.png"/></td>
+            </tr>
+            <tr>
+               <td>HulkAndIsa</td>
+               <td> TEEN , BOOTY </td>
+               <td><a href="https://gotanynudes.com/tag/hulkandisa/">https://gotanynudes.com/tag/hulkandisa/</a><br/></td>
+               <td><img alt="Image of HulkAndIsa" src="images/image54.png"/></td>
+            </tr>
+            <tr>
+               <td>OliviaMae</td>
+               <td> TEEN , BOOTY </td>
+               <td><a href="https://gotanynudes.com/tag/olivia-mae-onlyfans/">https://gotanynudes.com/tag/olivia-mae-onlyfans/</a><br/></td>
+               <td><img alt="Image of OliviaMae" src="images/image17.png"/></td>
+            </tr>
+            <tr>
+               <td>Stefanie Knight</td>
+               <td> PETITE  ,  TEEN , BLONDE </td>
+               <td><a href="https://gotanynudes.com/tag/stefanie-knight/">https://gotanynudes.com/tag/stefanie-knight/</a><br/><a href="https://prothots.com/tag/stefanie-knight/">https://prothots.com/tag/stefanie-knight/</a><br/></td>
+               <td><img alt="Image of Stefanie Knight" src="images/image107.png"/></td>
+            </tr>
+            <tr>
+               <td>Mia Monroe , TheCollegeStripper</td>
+               <td> LATINA  ,  TEEN , BOOTY </td>
+               <td><a href="https://gotanynudes.com/tag/mia-monroe/">https://gotanynudes.com/tag/mia-monroe/</a><br/><a href="https://influencersgonewild.com/category/mia-monroe/">https://influencersgonewild.com/category/mia-monroe/</a><br/></td>
+               <td><img alt="Image of Mia Monroe , TheCollegeStripper" src="images/image60.png"/></td>
+            </tr>
+            <tr>
+               <td>Emily Rinuado , Emjay</td>
+               <td> TEEN , BOOTY </td>
+               <td><a href="https://gotanynudes.com/tag/emily-rinaudo/">https://gotanynudes.com/tag/emily-rinaudo/</a><br/></td>
+               <td><img alt="Image of Emily Rinuado , Emjay" src="images/image88.png"/></td>
+            </tr>
+            <tr>
+               <td>RedHeadWinter</td>
+               <td> TEEN , PETITE </td>
+               <td><a href="https://gotanynudes.com/tag/redheadwinter/">https://gotanynudes.com/tag/redheadwinter/</a><br/></td>
+               <td><img alt="Image of RedHeadWinter" src="images/image1.png"/></td>
+            </tr>
+            <tr>
+               <td>Michelle Rabbit</td>
+               <td> TEEN , LATINA </td>
+               <td><a href="https://gotanynudes.com/tag/michelle-rabbit/">https://gotanynudes.com/tag/michelle-rabbit/</a><br/></td>
+               <td><img alt="Image of Michelle Rabbit" src="images/image100.png"/></td>
+            </tr>
+            <tr>
+               <td>AngelicFuckDoll</td>
+               <td> FIT , BLONDE </td>
+               <td><a href="https://gotanynudes.com/tag/angelicfuckdoll/">https://gotanynudes.com/tag/angelicfuckdoll/</a><br/></td>
+               <td><img alt="Image of AngelicFuckDoll" src="images/image45.png"/></td>
+            </tr>
+            <tr>
+               <td>Alyssa</td>
+               <td> TEEN , BLONDE </td>
+               <td><a href="https://gotanynudes.com/tag/alyssa/">https://gotanynudes.com/tag/alyssa/</a><br/></td>
+               <td><img alt="Image of Alyssa" src="images/image29.png"/></td>
+            </tr>
+            <tr>
+               <td>Strawberrymilk</td>
+               <td> TEEN , PETITE </td>
+               <td><a href="https://gotanynudes.com/tag/strawberrymilk_xoxo/">https://gotanynudes.com/tag/strawberrymilk_xoxo/</a><br/></td>
+               <td><img alt="Image of Strawberrymilk" src="images/image62.png"/></td>
+            </tr>
+            <tr>
+               <td>TheConnelTwins</td>
+               <td> TEEN , PETITE </td>
+               <td><a href="https://gotanynudes.com/tag/the-connell-twins/">https://gotanynudes.com/tag/the-connell-twins/</a><br/></td>
+               <td><img alt="Image of TheConnelTwins" src="images/image91.png"/></td>
+            </tr>
+            <tr>
+               <td>Dani Fae</td>
+               <td> TEEN , BLONDE </td>
+               <td><a href="https://gotanynudes.com/tag/dani-fae/">https://gotanynudes.com/tag/dani-fae/</a><br/></td>
+               <td><img alt="Image of Dani Fae" src="images/image12.png"/></td>
+            </tr>
+            <tr>
+               <td>Tati Evans</td>
+               <td> SMALL DI , MATURE </td>
+               <td><a href="https://gotanynudes.com/tag/tati-evans/">https://gotanynudes.com/tag/tati-evans/</a><br/></td>
+               <td><img alt="Image of Tati Evans" src="images/image58.png"/></td>
+            </tr>
+            <tr>
+               <td>Mila Sobolov</td>
+               <td> SMALL DI  ,  TEEN , BLONDE </td>
+               <td><a href="https://gotanynudes.com/tag/mila-sobolov/">https://gotanynudes.com/tag/mila-sobolov/</a><br/></td>
+               <td><img alt="Image of Mila Sobolov" src="images/image75.png"/></td>
+            </tr>
+            <tr>
+               <td>Steffy Moreno</td>
+               <td>LATINA</td>
+               <td><a href="https://gotanynudes.com/tag/steffy-moreno/">https://gotanynudes.com/tag/steffy-moreno/</a><br/></td>
+               <td><img alt="Image of Steffy Moreno" src="images/image74.png"/></td>
+            </tr>
+            <tr>
+               <td>AmyRoseButt</td>
+               <td> SMALL DI  ,  TEEN , BLONDE </td>
+               <td><a href="https://gotanynudes.com/tag/amyrosebutt-onlyfans/">https://gotanynudes.com/tag/amyrosebutt-onlyfans/</a><br/><a href="https://gotanynudes.com/tag/asmr-network/">https://gotanynudes.com/tag/asmr-network/</a><br/></td>
+               <td><img alt="Image of AmyRoseButt" src="images/image3.png"/></td>
+            </tr>
+            <tr>
+               <td>OliviaMaeBae</td>
+               <td> TEEN , BOOTY </td>
+               <td><a href="https://gotanynudes.com/tag/oliviamaebae/">https://gotanynudes.com/tag/oliviamaebae/</a><br/></td>
+               <td><img alt="Image of OliviaMaeBae" src="images/image63.png"/></td>
+            </tr>
+            <tr>
+               <td>LydiaGhost</td>
+               <td> TEEN , BOOTY </td>
+               <td><a href="https://gotanynudes.com/tag/lydiagh0st/">https://gotanynudes.com/tag/lydiagh0st/</a><br/></td>
+               <td><img alt="Image of LydiaGhost" src="images/image70.png"/></td>
+            </tr>
+            <tr>
+               <td>WhipTrax</td>
+               <td> MATURE , BOOTY </td>
+               <td><a href="https://gotanynudes.com/tag/whiptrax/">https://gotanynudes.com/tag/whiptrax/</a><br/></td>
+               <td><img alt="Image of WhipTrax" src="images/image95.png"/></td>
+            </tr>
+            <tr>
+               <td>Becca Marie</td>
+               <td> TEEN , BLONDE </td>
+               <td><a href="https://gotanynudes.com/tag/becca-marie/">https://gotanynudes.com/tag/becca-marie/</a><br/></td>
+               <td><img alt="Image of Becca Marie" src="images/image38.png"/></td>
+            </tr>
+            <tr>
+               <td>Chloe Lamb</td>
+               <td> MATURE , BOOTY </td>
+               <td><a href="https://gotanynudes.com/tag/chloe-lamb/">https://gotanynudes.com/tag/chloe-lamb/</a><br/></td>
+               <td><img alt="Image of Chloe Lamb" src="images/image77.png"/></td>
+            </tr>
+            <tr>
+               <td>Alisson Parker</td>
+               <td> MATURE , BOOTY </td>
+               <td><a href="https://gotanynudes.com/tag/allison-parker/">https://gotanynudes.com/tag/allison-parker/</a><br/></td>
+               <td><img alt="Image of Alisson Parker" src="images/image55.png"/></td>
+            </tr>
+            <tr>
+               <td>ItsKai</td>
+               <td> MATURE , BOOTY </td>
+               <td><a href="https://gotanynudes.com/tag/its-kaai/">https://gotanynudes.com/tag/its-kaai/</a><br/></td>
+               <td><img alt="Image of ItsKai" src="images/image94.png"/></td>
+            </tr>
+            <tr>
+               <td>AlexPlayGirl</td>
+               <td> TEEN , POLISH </td>
+               <td><a href="https://gotanynudes.com/tag/alexplaygirl/">https://gotanynudes.com/tag/alexplaygirl/</a><br/></td>
+               <td><img alt="Image of AlexPlayGirl" src="images/image27.png"/></td>
+            </tr>
+            <tr>
+               <td>KANDJBABY</td>
+               <td> TEEN , BLONDE </td>
+               <td><a href="https://prothots.com/tag/kandjbaby/">https://prothots.com/tag/kandjbaby/</a><br/></td>
+               <td><img alt="Image of KANDJBABY" src="images/image15.png"/></td>
+            </tr>
+            <tr>
+               <td>VictoriaLit</td>
+               <td> FIT  ,  TEEN , 4SOME </td>
+               <td><a href="https://influencersgonewild.com/category/victoria-lit/">https://influencersgonewild.com/category/victoria-lit/</a><br/></td>
+               <td><img alt="Image of VictoriaLit" src="images/image34.png"/></td>
+            </tr>
+            <tr>
+               <td>MorganAlexandra</td>
+               <td> SMALL DI  ,  TEEN , PETITE </td>
+               <td><a href="https://influencersgonewild.com/category/morgan-alexandra/">https://influencersgonewild.com/category/morgan-alexandra/</a><br/></td>
+               <td><img alt="Image of MorganAlexandra" src="images/image105.png"/></td>
+            </tr>
+            <tr>
+               <td>RocketBabey</td>
+               <td> SMALL DI  ,  TEEN , PETITE </td>
+               <td><a href="https://influencersgonewild.com/category/rocketbabey/">https://influencersgonewild.com/category/rocketbabey/</a><br/></td>
+               <td><img alt="Image of RocketBabey" src="images/image13.png"/></td>
+            </tr>
+            <tr>
+               <td>ChloeWild</td>
+               <td> TEEN , PETITE </td>
+               <td><a href="https://influencersgonewild.com/category/chloe-wildd/">https://influencersgonewild.com/category/chloe-wildd/</a><br/></td>
+               <td><img alt="Image of ChloeWild" src="images/image79.png"/></td>
+            </tr>
+            <tr>
+               <td>Trippie Bri</td>
+               <td> FIT , BLONDE </td>
+               <td><a href="https://prothots.com/tag/trippie-bri/">https://prothots.com/tag/trippie-bri/</a><br/></td>
+               <td><img alt="Image of Trippie Bri" src="images/image64.png"/></td>
+            </tr>
+            <tr>
+               <td>Amber Marie</td>
+               <td> MATURE , BOOTY </td>
+               <td><a href="https://influencersgonewild.com/category/amber-marie/">https://influencersgonewild.com/category/amber-marie/</a><br/></td>
+               <td><img alt="Image of Amber Marie" src="images/image71.png"/></td>
+            </tr>
+            <tr>
+               <td>Rainey James</td>
+               <td> TEEN , BOOTY </td>
+               <td><a href="https://prothots.com/tag/rainey-james/">https://prothots.com/tag/rainey-james/</a><br/></td>
+               <td><img alt="Image of Rainey James" src="images/image108.png"/></td>
+            </tr>
+            <tr>
+               <td>BelleOlivia3</td>
+               <td> 4SOME  ,  BLONDE  ,  TEEN , 3SOME </td>
+               <td><a href="https://prothots.com/tag/belleolivia3/https://internetchicks.com/?s=belleolivia3&amp;id=5036">https://prothots.com/tag/belleolivia3/https://internetchicks.com/?s=belleolivia3&amp;id=5036</a><br/><a href="https://simpcity.su/threads/belle-olivia-belleolivia3.8623/#post-2870139">https://simpcity.su/threads/belle-olivia-belleolivia3.8623/#post-2870139</a><br/></td>
+               <td><img alt="Image of BelleOlivia3" src="images/image36.png"/></td>
+            </tr>
+            <tr>
+               <td>Alaska Clarke</td>
+               <td> 4SOME  ,  BLONDE  ,  TEEN , 3SOME </td>
+               <td><a href="https://simpcity.su/threads/alaska-clarke-english-alaska-hrnyhoney.38597/#post-2955313">https://simpcity.su/threads/alaska-clarke-english-alaska-hrnyhoney.38597/#post-2955313</a><br/><a href="https://bunkrr.su/v/LO5PyHsfESbSJ">https://bunkrr.su/v/LO5PyHsfESbSJ</a><br/></td>
+               <td><img alt="Image of Alaska Clarke" src="images/image41.png"/></td>
+            </tr>
+            <tr>
+               <td>Brenda Trindade</td>
+               <td>LATINA</td>
+               <td><a href="https://prothots.com/tag/brenda-trindade/">https://prothots.com/tag/brenda-trindade/</a><br/></td>
+               <td><img alt="Image of Brenda Trindade" src="images/image22.png"/></td>
+            </tr>
+            <tr>
+               <td>PiperQuinn</td>
+               <td></td>
+               <td><a href="https://prothots.com/tag/piper-quinn/">https://prothots.com/tag/piper-quinn/</a><br/></td>
+               <td><img alt="Image of PiperQuinn" src="images/image40.png"/></td>
+            </tr>
+            <tr>
+               <td>OkiChloeo</td>
+               <td> TEEN , BOOTY </td>
+               <td><a href="https://internetchicks.com/actress/okichloeo/">https://internetchicks.com/actress/okichloeo/</a><br/></td>
+               <td><img alt="Image of OkiChloeo" src="images/image42.png"/></td>
+            </tr>
+            <tr>
+               <td>Anna Ralphs</td>
+               <td> TEEN , PETITE </td>
+               <td><a href="https://prothots.com/tag/anna-ralphs/">https://prothots.com/tag/anna-ralphs/</a><br/></td>
+               <td><img alt="Image of Anna Ralphs" src="images/image33.png"/></td>
+            </tr>
+            <tr>
+               <td>Amira Brie</td>
+               <td> TEEN , SMALL DI </td>
+               <td><a href="https://prothots.com/tag/amira-brie/">https://prothots.com/tag/amira-brie/</a><br/></td>
+               <td><img alt="Image of Amira Brie" src="images/image10.png"/></td>
+            </tr>
+            <tr>
+               <td>Amanda Trivzas</td>
+               <td> TEEN , BOOTY </td>
+               <td><a href="https://prothots.com/tag/amanda-trivizas-1/">https://prothots.com/tag/amanda-trivizas-1/</a><br/></td>
+               <td><img alt="Image of Amanda Trivzas" src="images/image11.png"/></td>
+            </tr>
+            <tr>
+               <td>KeyHansen</td>
+               <td> MATURE  ,  PETITE , FIT </td>
+               <td><a href="https://prothots.com/tag/kay-hansen/">https://prothots.com/tag/kay-hansen/</a><br/></td>
+               <td><img alt="Image of KeyHansen" src="images/image48.png"/></td>
+            </tr>
+            <tr>
+               <td>LivaLittle</td>
+               <td> BLONDE  ,  TEEN , 4SOME </td>
+               <td><a href="https://prothots.com/tag/livvalittle/">https://prothots.com/tag/livvalittle/</a><br/></td>
+               <td><img alt="Image of LivaLittle" src="images/image61.png"/></td>
+            </tr>
+            <tr>
+               <td>AspenRae</td>
+               <td></td>
+               <td><a href="https://prothots.com/tag/aspen-rae/">https://prothots.com/tag/aspen-rae/</a><br/></td>
+               <td><img alt="Image of AspenRae" src="images/image49.png"/></td>
+            </tr>
+            <tr>
+               <td>Bryce Adams</td>
+               <td> 4SOME  ,  FIT  ,  MATURE , 3SOME </td>
+               <td><a href="https://prothots.com/tag/bryce-adams/">https://prothots.com/tag/bryce-adams/</a><br/><a href="https://internetchicks.com/actress/bryce-adams/">https://internetchicks.com/actress/bryce-adams/</a><br/></td>
+               <td><img alt="Image of Bryce Adams" src="images/image53.png"/></td>
+            </tr>
+            <tr>
+               <td>Mercedes Blanche</td>
+               <td> TEEN , BLONDE </td>
+               <td><a href="https://prothots.com/tag/mercedes-blanche/">https://prothots.com/tag/mercedes-blanche/</a><br/></td>
+               <td><img alt="Image of Mercedes Blanche" src="images/image65.png"/></td>
+            </tr>
+            <tr>
+               <td>Maddy Belle</td>
+               <td> SMALL DI  ,  TEEN , BLONDE </td>
+               <td><a href="https://prothots.com/tag/maddy-belle-1/">https://prothots.com/tag/maddy-belle-1/</a><br/></td>
+               <td><img alt="Image of Maddy Belle" src="images/image24.png"/></td>
+            </tr>
+            <tr>
+               <td>DedeeeAndreea , imchloe3</td>
+               <td> TEEN , BOOTY </td>
+               <td><a href="https://prothots.com/tag/dedeeeandreea/">https://prothots.com/tag/dedeeeandreea/</a><br/></td>
+               <td><img alt="Image of DedeeeAndreea , imchloe3" src="images/image97.png"/></td>
+            </tr>
+            <tr>
+               <td>LAvynder Rain</td>
+               <td> SMALL DI , MATURE </td>
+               <td><a href="https://internetchicks.com/actress/lavynder-rain/">https://internetchicks.com/actress/lavynder-rain/</a><br/></td>
+               <td><img alt="Image of LAvynder Rain" src="images/image43.png"/></td>
+            </tr>
+            <tr>
+               <td>Tru Kait</td>
+               <td> TEEN , PETITE </td>
+               <td><a href="https://internetchicks.com/actress/tru-kait/">https://internetchicks.com/actress/tru-kait/</a><br/></td>
+               <td><img alt="Image of Tru Kait" src="images/image68.png"/></td>
+            </tr>
+            <tr>
+               <td>Maria Dee</td>
+               <td> THICC , BLONDE </td>
+               <td><a href="https://internetchicks.com/actress/marie-dee/">https://internetchicks.com/actress/marie-dee/</a><br/></td>
+               <td><img alt="Image of Maria Dee" src="images/image98.png"/></td>
+            </tr>
+            <tr>
+               <td>Zdank</td>
+               <td> TEEN , PETITE </td>
+               <td><a href="https://internetchicks.com/actress/zdank/">https://internetchicks.com/actress/zdank/</a><br/></td>
+               <td><img alt="Image of Zdank" src="images/image90.png"/></td>
+            </tr>
+            <tr>
+               <td>Fan Bus</td>
+               <td> FANBUS ,  HTTPS://INTERNETCHICKS.COM/ACTRESS/FAN-BUS/  , FANBUS </td>
+               <td><a href=""></a><br/></td>
+               <td><img alt="Image of Fan Bus" src="images/image9.png"/></td>
+            </tr>
+            <tr>
+               <td>LoverLaci</td>
+               <td> PETITE  ,  TEEN , 3SOME </td>
+               <td><a href="https://internetchicks.com/actress/loverlaci/">https://internetchicks.com/actress/loverlaci/</a><br/></td>
+               <td><img alt="Image of LoverLaci" src="images/image96.png"/></td>
+            </tr>
+            <tr>
+               <td>Juanita Belle</td>
+               <td>LATINA</td>
+               <td><a href="https://internetchicks.com/actress/juanita-belle/">https://internetchicks.com/actress/juanita-belle/</a><br/></td>
+               <td><img alt="Image of Juanita Belle" src="images/image23.png"/></td>
+            </tr>
+            <tr>
+               <td>Princess Jess</td>
+               <td> SMALL DI  ,  TEEN , PETITE </td>
+               <td><a href="https://internetchicks.com/actress/princess-jess/">https://internetchicks.com/actress/princess-jess/</a><br/><a href="https://internetchicks.com/actress/princess-jess/">https://internetchicks.com/actress/princess-jess/</a><br/></td>
+               <td><img alt="Image of Princess Jess" src="images/image37.png"/></td>
+            </tr>
+            <tr>
+               <td>Khloe Knowles</td>
+               <td> SMALL DI  ,  TEEN , BLONDE </td>
+               <td><a href="https://internetchicks.com/actress/khloe-knowles/">https://internetchicks.com/actress/khloe-knowles/</a><br/></td>
+               <td><img alt="Image of Khloe Knowles" src="images/image37.png"/></td>
+            </tr>
+            <tr>
+               <td>Lily Alcott</td>
+               <td> SMALL DI  ,  TEEN , BOOTY </td>
+               <td><a href="https://internetchicks.com/actress/lily-alcott/">https://internetchicks.com/actress/lily-alcott/</a><br/><a href="https://bunkrr.su/a/iXp57CAv">https://bunkrr.su/a/iXp57CAv</a><br/></td>
+               <td><img alt="Image of Lily Alcott" src="images/image21.png"/></td>
+            </tr>
+            <tr>
+               <td>Elle Brooke</td>
+               <td> BOOTY  ,  THICC , 3SOME </td>
+               <td><a href="https://internetchicks.com/actress/elle-brooke/">https://internetchicks.com/actress/elle-brooke/</a><br/></td>
+               <td><img alt="Image of Elle Brooke" src="images/image56.png"/></td>
+            </tr>
+            <tr>
+               <td>Kaley Borsage / Cassidyxo</td>
+               <td> TEEN , BLONDE </td>
+               <td><a href="https://internetchicks.com/actress/kaley-bosarge/">https://internetchicks.com/actress/kaley-bosarge/</a><br/></td>
+               <td><img alt="Image of Kaley Borsage / Cassidyxo" src="images/image81.png"/></td>
+            </tr>
+            <tr>
+               <td>Lily Lanes</td>
+               <td> TEEN , BLONDE </td>
+               <td><a href="https://internetchicks.com/actress/lilylanes/">https://internetchicks.com/actress/lilylanes/</a><br/></td>
+               <td><img alt="Image of Lily Lanes" src="images/image86.png"/></td>
+            </tr>
+            <tr>
+               <td>Mia Ipanema</td>
+               <td> 4SOME  ,  MATURE , 3SOME </td>
+               <td><a href="https://internetchicks.com/actress/mia-ipanema/">https://internetchicks.com/actress/mia-ipanema/</a><br/></td>
+               <td><img alt="Image of Mia Ipanema" src="images/image4.png"/></td>
+            </tr>
+            <tr>
+               <td>Molly Pills</td>
+               <td> 4SOME  ,  BLONDE  ,  MATURE , 3SOME </td>
+               <td><a href="https://internetchicks.com/actress/molly-pills/">https://internetchicks.com/actress/molly-pills/</a><br/></td>
+               <td><img alt="Image of Molly Pills" src="images/image99.png"/></td>
+            </tr>
+            <tr>
+               <td>Nicole Aniston</td>
+               <td></td>
+               <td><a href="https://internetchicks.com/actress/nicole-aniston/">https://internetchicks.com/actress/nicole-aniston/</a><br/></td>
+               <td><img alt="Image of Nicole Aniston" src="images/image16.png"/></td>
+            </tr>
+            <tr>
+               <td>Naked Bakers</td>
+               <td>3SOME , 4SOME , MATURE</td>
+               <td><a href="https://internetchicks.com/actress/naked-bakers/">https://internetchicks.com/actress/naked-bakers/</a><br/></td>
+               <td><img alt="Image of Naked Bakers" src="images/image82.png"/></td>
+            </tr>
+            <tr>
+               <td>ElleRayXo</td>
+               <td>THICC, MATURE</td>
+               <td><a href="https://internetchicks.com/actress/ellerayxo/">https://internetchicks.com/actress/ellerayxo/</a><br/></td>
+               <td><img alt="Image of ElleRayXo" src="images/image47.png"/></td>
+            </tr>
+            <tr>
+               <td>KittieBabyxxx</td>
+               <td> FIT  ,  TEEN , BLONDE </td>
+               <td><a href="https://internetchicks.com/actress/kittiebabyxxx/">https://internetchicks.com/actress/kittiebabyxxx/</a><br/></td>
+               <td><img alt="Image of KittieBabyxxx" src="images/image20.png"/></td>
+            </tr>
+            <tr>
+               <td>Jaka Mitchell</td>
+               <td> 4SOME  ,  TEEN , 3SOME </td>
+               <td><a href="https://internetchicks.com/actress/jakara-mitchell/">https://internetchicks.com/actress/jakara-mitchell/</a><br/></td>
+               <td><img alt="Image of Jaka Mitchell" src="images/image66.png"/></td>
+            </tr>
+            <tr>
+               <td>BlondeAdobo</td>
+               <td> SMALL DI  ,  TEEN , BLONDE </td>
+               <td><a href="https://internetchicks.com/actress/blondeadobo/">https://internetchicks.com/actress/blondeadobo/</a><br/></td>
+               <td><img alt="Image of BlondeAdobo" src="images/image31.png"/></td>
+            </tr>
+            <tr>
+               <td>Ambie Bambii</td>
+               <td> SMALL DI  ,  TEEN , BLONDE </td>
+               <td><a href="https://internetchicks.com/actress/ambie-bambii/">https://internetchicks.com/actress/ambie-bambii/</a><br/></td>
+               <td><img alt="Image of Ambie Bambii" src="images/image52.png"/></td>
+            </tr>
+            <tr>
+               <td>Asa Akira</td>
+               <td> PORN , ,  PORN </td>
+               <td><a href=""></a><br/></td>
+               <td><img alt="Image of Asa Akira" src="images/image7.png"/></td>
+            </tr>
+            <tr>
+               <td>Amber Donnel</td>
+               <td> FIT  ,  TEEN , BLONDE </td>
+               <td><a href="https://prothots.com/tag/amberodonnell/">https://prothots.com/tag/amberodonnell/</a><br/><a href="https://bunkrr.su/a/zKgFr307">https://bunkrr.su/a/zKgFr307</a><br/></td>
+               <td><img alt="Image of Amber Donnel" src="images/image76.png"/></td>
+            </tr>
+            <tr>
+               <td>MilaKittenX</td>
+               <td> FIT  ,  TEEN , BLONDE </td>
+               <td><a href="https://internetchicks.com/actress/milakittenx/">https://internetchicks.com/actress/milakittenx/</a><br/><a href="https://prothots.com/tag/milakittenx-1/">https://prothots.com/tag/milakittenx-1/</a><br/></td>
+               <td><img alt="Image of MilaKittenX" src="images/image80.png"/></td>
+            </tr>
+            <tr>
+               <td>LexiFitXoXo</td>
+               <td> FIT  ,  TEEN , BLONDE </td>
+               <td><a href="https://prothots.com/tag/lexifitxoxo/">https://prothots.com/tag/lexifitxoxo/</a><br/><a href="https://internetchicks.com/actress/lexifitxoxo/">https://internetchicks.com/actress/lexifitxoxo/</a><br/></td>
+               <td><img alt="Image of LexiFitXoXo" src="images/image14.png"/></td>
+            </tr>
+            <tr>
+               <td>CARYNBEAUMONT</td>
+               <td> TEEN , FIT </td>
+               <td><a href="https://prothots.com/tag/carynbeaumont/">https://prothots.com/tag/carynbeaumont/</a><br/></td>
+               <td><img alt="Image of CARYNBEAUMONT" src="images/image93.png"/></td>
+            </tr>
+            <tr>
+               <td>Ruth Lee</td>
+               <td> TEEN , ,  FIT </td>
+               <td><a href="https://prothots.com/tag/ruth-lee/">https://prothots.com/tag/ruth-lee/</a><br/><a href="https://simpcity.su/threads/ruth-lee-ruth_lee-ruthlee.26664/page-3">https://simpcity.su/threads/ruth-lee-ruth_lee-ruthlee.26664/page-3</a><br/></td>
+               <td><img alt="Image of Ruth Lee" src="images/image89.png"/></td>
+            </tr>
+            <tr>
+               <td>HOLLY BROUGHAM</td>
+               <td> FIT  ,  TEEN , 3SOME </td>
+               <td><a href="https://prothots.com/tag/holly-brougham/">https://prothots.com/tag/holly-brougham/</a><br/></td>
+               <td><img alt="Image of HOLLY BROUGHAM" src="images/image25.png"/></td>
+            </tr>
+            <tr>
+               <td>Savannah Jones</td>
+               <td> FIT  ,  TEEN , BLONDE </td>
+               <td><a href="https://prothots.com/tag/savannah-jones/">https://prothots.com/tag/savannah-jones/</a><br/><a href="https://simpcity.su/threads/savannah-jones-savannahjonly.18119/page-2">https://simpcity.su/threads/savannah-jones-savannahjonly.18119/page-2</a><br/></td>
+               <td><img alt="Image of Savannah Jones" src="images/image69.png"/></td>
+            </tr>
+            <tr>
+               <td>Eva Lovia</td>
+               <td>PORN</td>
+               <td><a href="https://internetchicks.com/actress/eva-lovia/">https://internetchicks.com/actress/eva-lovia/</a><br/></td>
+               <td><img alt="Image of Eva Lovia" src="images/image44.png"/></td>
+            </tr>
+            <tr>
+               <td>MsBarbie69</td>
+               <td> FIT  ,  TEEN , BLONDE </td>
+               <td><a href="https://prothots.com/tag/msbarbie69/">https://prothots.com/tag/msbarbie69/</a><br/><a href="https://simpcity.su/threads/msbarbie69.16021/page-2">https://simpcity.su/threads/msbarbie69.16021/page-2</a><br/></td>
+               <td><img alt="Image of MsBarbie69" src="images/image6.png"/></td>
+            </tr>
+            <tr>
+               <td>Amber Jade</td>
+               <td> THICC , PORN </td>
+               <td><a href="https://simpcity.su/threads/amber-jade.69131/">https://simpcity.su/threads/amber-jade.69131/</a><br/><a href="https://pixeldrain.com/l/m1WByuug">https://pixeldrain.com/l/m1WByuug</a><br/></td>
+               <td><img alt="Image of Amber Jade" src="images/image72.png"/></td>
+            </tr>
+            <tr>
+                <td>Isabelle Eleanore</td>
+                <td> THICC , BOOTY , THE BEST</td>
+                <td><a href="https://simpcity.su/threads/isabelle-eleanore-isabellejeremy.11486/">https://simpcity.su/threads/isabelle-eleanore-isabellejeremy.11486/</a><br/><a href="https://internetchicks.com/holly-brougham-threesome-with-isabelle-eleanore-video-leaked/">https://internetchicks.com/holly-brougham-threesome-with-isabelle-eleanore-video-leaked/</a><br/></td>
+                <td><img alt="Image of Isabelle Eleanore" src="images/isabelle-eleanore.jpg"/></td>
+             </tr>
+         </tbody>
+      </table>
+      <script>
+         function sortTable() {
+             var table, rows, switching, i, x, y, shouldSwitch;
+             table = document.getElementById("modelsTable");
+             switching = true;
+             while (switching) {
+                 switching = false;
+                 rows = table.rows;
+                 for (i = 1; i < (rows.length - 1); i++) {
+                     shouldSwitch = false;
+                     x = rows[i].getElementsByTagName("TD")[0];
+                     y = rows[i + 1].getElementsByTagName("TD")[0];
+                     if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                         shouldSwitch = true;
+                         break;
+                     }
+                 }
+                 if (shouldSwitch) {
+                     rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                     switching = true;
+                 }
+             }
+         }
+         
+         function filterModels() {
+             var input = document.getElementById("filterSelect");
+             var selectedFilters = Array.from(input.selectedOptions).map(option => option.value.toUpperCase());
+             var table = document.getElementById("modelsTable");
+             var tr = table.getElementsByTagName("tr");
+             var count = 0;
+         
+             for (var i = 1; i < tr.length; i++) {
+                 var td = tr[i].getElementsByTagName("td")[1]; // Tags column
+                 if (td) {
+                     var txtValue = td.textContent || td.innerText;
+                     var tags = txtValue.toUpperCase().split(',').map(tag => tag.trim());
+                     var match = selectedFilters.length === 0 || tags.some(tag => selectedFilters.includes(tag));
+         
+                     if (match) {
+                         tr[i].style.display = "";
+                         count++;
+                     } else {
+                         tr[i].style.display = "none";
+                     }
+                 }       
+             }
+         
+             // Update the filter info display
+             var filterInfo = document.getElementById("filterInfo");
+             if (selectedFilters.length > 0) {
+                 filterInfo.innerHTML = "Wybrany tag: " + selectedFilters.join(", ") + "<br>Liczba wyników: " + count;
+             } else {
+                 filterInfo.innerHTML = "";
+             }
+         }
+         
+         function clearFilters() {
+             document.getElementById('filterSelect').selectedIndex = -1;
+             filterModels();
+             sortTable();
+         }
+      </script>
+   </body>
+</html>
