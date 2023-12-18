@@ -1,7 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     const filterTags = document.getElementById('filter-tags');
-    const models = document.querySelectorAll('.row.mb-3');
+    const models = document.querySelectorAll('.model-container');
     const clearButton = document.getElementById('clear-filters');
 
     // Function to update models display based on selected tags
@@ -29,3 +29,18 @@ document.addEventListener('DOMContentLoaded', function () {
         filterModels();
     });
 });
+
+    // Function to update the count of models
+    function updateModelCount() {
+        const modelCount = document.querySelectorAll('.name').length;
+        const countElement = document.querySelector('p');
+        if (countElement) {
+            countElement.textContent = 'Liczba modelek: ' + modelCount;
+        }
+    }
+
+    // Call the updateModelCount function on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        updateModelCount();
+    });
+    
