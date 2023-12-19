@@ -2264,7 +2264,18 @@
         </div>
         </div>
         <script src="filter.js"></script>
-        
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+              const modelContainer = document.querySelector('.model-container').parentNode; // Pobiera rodzica kontenera modeli
+              let models = Array.from(modelContainer.querySelectorAll('.model-container')); // Pobiera wszystkie kontenery modeli
+              models.sort((a, b) => a.querySelector('.name').textContent.localeCompare(b.querySelector('.name').textContent));
+            
+              models.forEach(model => {
+                modelContainer.appendChild(model); // Dodaje posortowane modele do rodzica kontenera
+              });
+            });
+        </script>
+            
 </body>
 
 </html>
