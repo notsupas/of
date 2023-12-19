@@ -38,50 +38,84 @@
             background-color: white;
         }
 
+        .sticky-header {
+            position: sticky;
+            top: 0; /* Adjust this value as needed */
+            background-color: #007bff; /* Match the background of .bg-primary */
+            z-index: 1000; /* To ensure it stays on top */
+        }
+
+        .custom-select {
+            width: 100%; /* Makes the dropdown full-width */
+            height: 200px; /* Adjust height as needed */
+            overflow-y: auto; /* Keeps the vertical scroll */
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            padding: 0.375rem 1.75rem 0.375rem 0.75rem;
+        }
+
+
     </style>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script> -->
+
 </head>
 
 <body>
-    <select class="sticky" id="filter-tags" multiple="multiple" style="height: 100px; overflow-y: scroll;">
-        <option value="3SOME">3SOME</option>
-        <option value="4SOME">4SOME</option>
-        <option value="BLONDE">BLONDE</option>
-        <option value="BOOTY">BOOTY</option>
-        <option value="BRUNETTE">BRUNETTE</option>
-        <option value="CUTE">CUTE</option>
-        <option value="FANBUS">FANBUS</option>
-        <option value="FIT">FIT</option>
-        <option value="INDIAN">INDIAN</option>
-        <option value="LATINA">LATINA</option>
-        <option value="MATURE">MATURE</option>
-        <option value="MILF">MILF</option>
-        <option value="PETITE">PETITE</option>
-        <option value="POLISH">POLISH</option>
-        <option value="PORN">PORN</option>
-        <option value="PRO BOXER">PRO BOXER</option>
-        <option value="SMALL DI">SMALL DI</option>
-        <option value="TEEN">TEEN</option>
-        <option value="THE BEST">THE BEST</option>
-        <option value="Australian">Australian</option>
-        <option value="MALE">MALE</option>
-        <option value="AMATEUR">AMATEUR</option>
-        <option value="BIG TI">BIG TI</option>
-        <option value="THICC">THICC</option>
-        <option value="CUMSHOT">CUMSHOT</option>
-    </select>
-    
-    <button
-        id="clear-filters">Clear Filters</button>
-        <div class="sticky">
+    <div class="container">
+        <div class="row mb-12">
+            <h2 class="text-center">OnlyFans Models</h2>
+        </div>
+        <div class="row mb-12">
             <p id="filterInfo"></p>
-            <h2>OnlyFans Models</h2>
-            
+        </div>
+        <div class="row mb-12">
+            <select class="sticky custom-select" id="filter-tags" multiple="multiple" style="height: 100px; overflow-y: scroll;">
+                <option value="3SOME">3SOME</option>
+                <option value="4SOME">4SOME</option>
+                <option value="BLONDE">BLONDE</option>
+                <option value="BOOTY">BOOTY</option>
+                <option value="BRUNETTE">BRUNETTE</option>
+                <option value="CUTE">CUTE</option>
+                <option value="FANBUS">FANBUS</option>
+                <option value="FIT">FIT</option>
+                <option value="INDIAN">INDIAN</option>
+                <option value="LATINA">LATINA</option>
+                <option value="MATURE">MATURE</option>
+                <option value="MILF">MILF</option>
+                <option value="PETITE">PETITE</option>
+                <option value="POLISH">POLISH</option>
+                <option value="PORN">PORN</option>
+                <option value="PRO BOXER">PRO BOXER</option>
+                <option value="SMALL DI">SMALL DI</option>
+                <option value="TEEN">TEEN</option>
+                <option value="THE BEST">THE BEST</option>
+                <option value="Australian">Australian</option>
+                <option value="MALE">MALE</option>
+                <option value="AMATEUR">AMATEUR</option>
+                <option value="BIG TI">BIG TI</option>
+                <option value="THICC">THICC</option>
+                <option value="CUMSHOT">CUMSHOT</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mb-6">
+            <div class="col text-right"> <!-- Add this div with classes -->
+                <button id="apply-filter" class="btn btn-primary">Apply Filter</button>
+                <button id="clear-filters" class="btn btn-primary">Clear Filters</button>
+            </div>
+        </div>
+    </div>
+    
+        <div class="sticky">  
             <div class="container border border-secondary">
-                <div class="row mb-3 bg-primary heading">
+                <div class="row mb-3 bg-primary heading sticky-header">
                     <div class="name col-md-3" style="word-wrap: break-word;"><h2>Name</h2></div>
                     <div class="tags col-md-3" style="word-wrap: break-word;"><h2>Tags</h2></div>
                     <div class="links col-md-3" style="word-wrap: break-word;"><h2>Links</h2></div>
@@ -1200,8 +1234,30 @@
                 </div>
                 <div class="row mb-3 model-container">
                     <div class="name col-md-3" style="word-wrap: break-word;">Fan Bus</div>
-                    <div class="tags col-md-3" style="word-wrap: break-word;"> FANBUS , HTTPS://INTERNETCHICKS.COM/ACTRESS/FAN-BUS/ , FANBUS </div>
-                    <div class="links col-md-3" style="word-wrap: break-word;"><a href=""></a></div>
+                    <div class="tags col-md-3" style="word-wrap: break-word;"> FANBUS </div>
+                    <div class="links col-md-3" style="word-wrap: break-word;">
+                        <ul>
+                            <li><a href="https://simpcity.su/threads/fan-bus.44631/">SIMPCITY THREAD</a></li>
+                            <li><a href="https://internetchicks.com/actress/fan-bus/">INTERNETCHICKS</a></li>
+                            <li><a href="https://onlyfans.com/thefanvan">OF</a></li>
+                            <li><a href="https://bunkrr.su/a/OREoKnIT">ALL VIDEOS - 4GB</a></li>
+                            <li><a href="https://gofile.io/d/hKIYFK">PAWGQUEEN - BOOTY</a></li>
+                            <li><a href="https://gofile.io/d/bLrjly">KRYSTAL - SQUIRT</a></li>
+                            <li><a href="https://gofile.io/d/Wqbo9n">AALIYAH HADID - BOOTY - DOGGY</a></li>
+                            <li><a href="https://bunkrr.su/v/-QueenRogue-FanBus-yJ0xyGW0.mp4">QUEEN ROGUE - BIG TI, MATURE, BOOTY</a></li>
+                            <li><a href="https://bunkrr.su/v/Maya-Mixon-Fanbus-qFKFzCMZ.mp4">MAYA MIXON - 3SOME - BBG</a></li>
+                            <li><a href="https://gofile.io/d/9EPten">yogasexpositions and followthebuti - BBC - 4SOME</a></li>
+                            <li><a href="https://pixeldrain.com/u/Av8xd6MU">MANDI MAY - VERY SEXY - THICC</a></li>
+                            <li><a href="https://gofile.io/d/jLDLnw">ALEXAS MORGAN</a></li>
+                            <li><a href="https://gofile.io/d/6LGO7u">JADE TEEN</a></li>
+                            <li><a href="https://gofile.io/d/98iV2f">graycee baybee - BLONDE - HARD</a></li>
+                            <li><a href="https://bunkrr.su/v/jade-teen-KaxNLQgr.mp4">JADE TEEN2</a></li>
+                            <li><a href="https://gofile.io/d/kV1Hwo">GEM & LACEY - SEXY THICC BIGG BOOTY ASF</a></li>
+                            <li><a href="https://bunkrr.su/v/mSYY6ZLLT8rTe">REBECCAJ - THICC BOOTY</a></li>
+                            <li><a href="https://bunkrr.su/v/F2C4xabAtugyw">DIAMOND FRANCO - SEXY THICC BIGG BOOTY ASF</a></li>
+                            <li><a href="https://gofile.io/d/nzEpRp">ALEXAS MORGAN & MACY - MASSIVE SQUIRTS</a></li>
+                        </ul>
+                    </div>
                     <div class="image col-md-3" style="word-wrap: break-word;"><img alt="Image of Fan Bus" class="img-fluid" src="images/image9.png" /></div>
                 </div>
                 <div class="row mb-3 model-container">
@@ -1573,12 +1629,14 @@
                   <div class="name col-md-3" style="word-wrap: break-word;">Eden Lux</div>
                   <div class="tags col-md-3" style="word-wrap: break-word;"> BLONDE , THE BEST , Australian , 3SOME</div>
                   <div class="links col-md-3" style="word-wrap: break-word;">
-                        <a href="https://simpcity.su/threads/eden-lux.39610/">SIMPCITY THREAD</a><br/>
-                        <a href="https://gofile.io/d/2jHCfr">SEX</a><br/>
-                        <a href="https://bunkrr.su/v/eden-luxx-onlyfans-rare-xOLOD2CD.mp4">SEX2</a><br/>
-                        <a href="https://pixeldrain.com/u/cvzxaY1D">SEX3</a><br/>
-                        <a href="https://bunkrr.su/v/EdenLux-threesome-OF-exclusive-sextape-8ArBM47L.mp4">BGG</a>
-                        <a href="https://jpg3.su/a/edenlux.OPiCD">PICS</a>
+                        <ul>
+                            <li><a href="https://simpcity.su/threads/eden-lux.39610/">SIMPCITY THREAD</a></li>
+                            <li><a href="https://gofile.io/d/2jHCfr">SEX</a></li>
+                            <li><a href="https://bunkrr.su/v/eden-luxx-onlyfans-rare-xOLOD2CD.mp4">SEX2</a></li>
+                            <li><a href="https://pixeldrain.com/u/cvzxaY1D">SEX3</a></li>
+                            <li><a href="https://bunkrr.su/v/EdenLux-threesome-OF-exclusive-sextape-8ArBM47L.mp4">BGG</a></li>
+                            <li><a href="https://jpg3.su/a/edenlux.OPiCD">PICS</a></li>
+                        </ul>
                   </div>
                   <div class="image col-md-3" style="word-wrap: break-word;">
                         <img alt="Image of Eden Lux" class="img-fluid" src="images/edenlux.jpg" />
@@ -2260,6 +2318,78 @@
                       <img alt="Image of mykitty - mycookiejar" class="img-fluid" src="images/cookiejar.jpg" />
                 </div>
             </div>
+            <div class="row mb-3 model-container">
+                <div class="name col-md-3" style="word-wrap: break-word;">Lacey Jayne</div>
+                <div class="tags col-md-3" style="word-wrap: break-word;"> PORN , THICC </div>
+                <div class="links col-md-3" style="word-wrap: break-word;">
+                      <ul>
+                            <li><a href="https://simpcity.su/threads/lacey-jayne.46429/">SIMPCITY THREAD</a></li>
+                            <li><a href="https://onlyfans.com/laceyjaynefree">OF</a></li>
+                            <li><a href="https://www.instagram.com/lacey_jayne">INSTAGRAM</a></li>
+                            <li><a href="https://bunkrr.su/v/McMiG17m6qZ65">SEX - FANBUS</a></li>
+                            <li><a href="https://bunkrr.su/v/FJcDwqHAIR9gp">SEX</a></li>
+                            
+                            
+                      </ul>
+                </div>
+                <div class="image col-md-3" style="word-wrap: break-word;">
+                      <img alt="Image of Lacey Jayne" class="img-fluid" src="images/laceyjayne.jpg" />
+                </div>
+            </div>
+            <div class="row mb-3 model-container">
+                <div class="name col-md-3" style="word-wrap: break-word;">Mandi May</div>
+                <div class="tags col-md-3" style="word-wrap: break-word;"> THICC </div>
+                <div class="links col-md-3" style="word-wrap: break-word;">
+                      <ul>
+                            <li><a href="https://simpcity.su/threads/mandi-may-realmandimay-mandimayxxx-mandi-may-fat.183469/">SIMPCITY THREAD</a></li>
+                            <li><a href="https://onlyfans.com/">OF</a></li>
+                      </ul>
+                </div>
+                <div class="image col-md-3" style="word-wrap: break-word;">
+                      <img alt="Image of Mandi May" class="img-fluid" src="images/mandimay.jpg" />
+                </div>
+            </div>
+            <div class="row mb-3 model-container">
+                <div class="name col-md-3" style="word-wrap: break-word;">Diamond Franco</div>
+                <div class="tags col-md-3" style="word-wrap: break-word;"> THICC </div>
+                <div class="links col-md-3" style="word-wrap: break-word;">
+                      <ul>
+                            <li><a href="https://simpcity.su/threads/diamond-franco-jaydexofox.195291/#post-3075488">SIMPCITY THREAD</a></li>
+                            <li><a href="https://onlyfans.com/diamondxofranco">OF</a></li>
+                            <li><a href="https://www.instagram.com/diamond.franco/">INSTAGRAM</a></li>
+                            <li><a href="https://gofile.io/d/YLPLae">SEX - FANBUS</a></li>
+                            <li><a href="https://gofile.io/d/3eP482">SEX2 - FANBUS</a></li>
+                      </ul>
+                </div>
+                <div class="image col-md-3" style="word-wrap: break-word;">
+                      <img alt="Image of Diamond Franco" class="img-fluid" src="images/diamondfranco.jpg" />
+                </div>
+            </div>
+            <div class="row mb-3 model-container">
+                <div class="name col-md-3" style="word-wrap: break-word;">Maria Gijeli</div>
+                <div class="tags col-md-3" style="word-wrap: break-word;"> THICC , 4SOME </div>
+                <div class="links col-md-3" style="word-wrap: break-word;">
+                      <ul>
+                            <li><a href="https://simpcity.su/threads/maria-gjieli.9671/">SIMPCITY THREAD</a></li>
+                            <li><a href="https://onlyfans.com/maria_gjieli">OF</a></li>
+                            <li><a href="https://www.instagram.com/diamond.franco/">INSTAGRAM</a></li>
+                            <li><a href="https://bunkrr.su/a/jcYMh0XG">ALL VIDEOS</a></li>
+                            <li><a href="https://gofile.io/d/CmYbU1">SEX - 4SOME - BGGG</a></li>
+                            <li><a href="https://gofile.io/d/J70fKu">SEX2 - 4SOME - BGGG - THICC</a></li>
+                            <li><a href="https://pixeldrain.com/u/LZxxJkq5">SEX3 - DOGGY - BED</a></li>
+                            <li><a href="https://bunkrr.su/v/MJ2-EgeZ0Ci4.mp4">SEX4 - VAN - DOGGY</a></li>
+                            <li><a href="https://bunkrr.su/v/maria-vs-jax-It0mAlYZ.mp4">SEX5 - BBC</a></li>
+                            <li><a href="https://bunkrr.su/v/Maria-Gjieli-Creampied-By-Jmac-dSGbIjHy.mp4">SEX6 - RED LINGERIE - CREAMPIE</a></li>
+                            <li><a href="https://bunkrr.su/v/Maria-Gjieli-YesyNaya-Dro-sOBHTClV.mp4">SEX7 - 3SOME - BGG</a></li>
+                            <li><a href="https://gofile.io/d/9R3VOm">SEX8 - BLUE LINGERIE - MISSIONARY</a></li>
+                            <li><a href="https://bunkrr.su/v/dsf65g4gsq6dg-Jd3b0whl.mp4">SEX9 - OIL ASS - MISSIONARY</a></li>
+                            <li><a href="https://bunkrr.su/v/Gjieli-FyE1r1sA.mp4">SEX10 - DOGGY</a></li>
+                        </ul>
+                </div>
+                <div class="image col-md-3" style="word-wrap: break-word;">
+                      <img alt="Image of Maria Gijeli" class="img-fluid" src="images/gijeli.jpg" />
+                </div>
+            </div>
             </div>
         </div>
         </div>
@@ -2275,6 +2405,30 @@
               });
             });
         </script>
+        <script>
+            $(document).ready(function() {
+                $('#filter-tags').select2();
+            });
+        </script>
+        <script>
+            document.getElementById('apply-filter').addEventListener('click', function() {
+                var selectedValues = $('#filter-tags').val();
+                // Implement your filtering logic here
+                console.log("Selected Filters: ", selectedValues);
+            });
+        </script>
+        <script>
+        document.getElementById('apply-filter').addEventListener('click', function() {
+            var selectedValues = $('#filter-tags').val();
+            // Add your filtering logic here using selectedValues
+            console.log("Selected Filters: ", selectedValues);
+        });
+        
+        document.getElementById('clear-filters').addEventListener('click', function() {
+            $('#filter-tags').val(null).trigger('change');
+        });
+        </script>
+        
             
 </body>
 
