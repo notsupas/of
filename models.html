@@ -115,13 +115,13 @@
 
 <body>
     <div class="container header-container bg-secondary border shadow">
-            <div class="row mb-12">
+            <div class="row mb-12 col-12">
                     <h2 class="text-center">OnlyFans Models</h2>
             </div>
-            <div class="row mb-12">
+            <div class="row mb-12 col-12">
                 <p id="filterInfo"></p>
             </div>
-            <div class="row mb-12">
+            <div class="row mb-12 col-12">
                 <select class="sticky custom-select" id="filter-tags" multiple="multiple" style="height: 100px; overflow-y: scroll;">
                     <option value="3SOME">3SOME</option>
                     <option value="4SOME">4SOME</option>
@@ -154,28 +154,20 @@
         
     
         <div class="row">
-            <!--<div id="listed-tags" class="row-mb-12"></div>-->
-        </div>
-    
-        <div class="row mb-6">
-            <div class="col text-right mt-2 mb-2"> <!-- Add this div with classes -->
-                <button id="pokazUkryjPrzycisk" class="btn btn-primary">Pokaż/Ukryj linki Instagram</button>
+            <div class="col-12">
+                <!--<div id="listed-tags" class="row-mb-12"></div>-->
             </div>
         </div>
-
-        
+    
         <div class="row">
-            <div id="mojDiv" class="mb-12 linkiInstagram"></div>
-        </div>
-        
-        
-    
-            <div class="row">
-                <div class="col-12 text-right mb-2"> <!-- Add this div with classes -->
-                    <button id="apply-filter" class="btn btn-primary">Apply Filter</button>
-                    <button id="clear-filters" class="btn btn-primary">Clear Filters</button>
+                    <div id="mojDiv col-12" class="mb-12 linkiInstagram"></div>
+                
+                        <div class="col-12 text-right mb-2 mt-2"> <!-- Add this div with classes -->
+                            <button id="apply-filter" class="btn btn-primary">Apply Filter</button>
+                            <button id="clear-filters" class="btn btn-primary">Clear Filters</button>
+                        </div>
+                        <div class="search col-12 text-right"></div>
                 </div>
-            </div>
         </div>
 
     
@@ -2916,9 +2908,9 @@
                 searchBox.setAttribute('id', 'modelSearch');
                 searchBox.setAttribute('placeholder', 'Wyszukaj modelkę...');
 
-                // Dodawanie pola wyszukiwania pod przyciskiem "Clear Filters"
-                const clearFiltersButton = document.getElementById('clear-filters');
-                clearFiltersButton.parentNode.insertBefore(searchBox, clearFiltersButton.nextSibling);
+                // Dodawanie pola wyszukiwania do diva o klasie "search"
+                const searchDiv = document.querySelector('.search');
+                searchDiv.appendChild(searchBox);
 
                 // Funkcja wyszukiwania
                 searchBox.addEventListener('input', function() {
@@ -2935,6 +2927,7 @@
                     });
                 });
             });
+
 
         </script>
 </body>
